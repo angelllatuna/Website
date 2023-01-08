@@ -1,0 +1,545 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #2c6a75;
+}
+
+.main-width {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 20px ;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-color: #2c6a75;
+    position: relative;
+}
+
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 48px;
+    width: 50px;
+    background: transparent;
+    border: 2px solid #5f9ea0;
+    color: #5f9ea0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+nav .nav-list{
+    list-style: none;
+}
+nav .nav-list li{
+    display: inline-block;
+}
+nav .nav-list li a{
+    display: inline-block;
+    color: #eee;
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 600;
+}
+nav .nav-list li:not(:last-child) a:hover{
+    color: #5f9ea0;
+    transition: .5s;
+}
+nav .nav-list li.btn a{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #5f9ea0;
+    padding: 9px 28px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color: #5f9ea0;
+    font-weight: 500;
+}
+
+nav .nav-list li.btn:hover a{
+    background: #5f9ea0;
+    color: whitesmoke;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+
+.container{
+    padding-top: 190px;
+    margin-left: 20px;
+    
+}
+
+.container .hero-text{
+    margin-bottom: 40px;
+}
+
+.container .hero-text h1{
+    color: white;
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+
+span{
+    color: black;
+}
+
+.container .hero-text h3{
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.container .hero-text p{
+    width: 440px;
+    max-width: 100%;
+    color: whitesmoke;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.social a{
+    height: 45px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255, 0.1);
+    margin-bottom: 35px;
+}
+
+.social a:hover{
+    transform: scale(1.1);
+    background: #5f9ea0;
+    transition: 4s;
+}
+
+.container .hero-text button{
+    color: whitesmoke;
+    background-color: #5f9ea0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid #5f9ea0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.container .hero-text button:hover{
+    background: transparent;
+    border: 2px solid #5f9ea0;
+    color: whitesmoke;
+    transition: .4s;
+}
+
+.bottom{
+    margin-top: 234px;
+    padding-top: 40px;
+    background-color: #2c6a75;
+}
+
+.bottom p{
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 930px) {
+    nav .nav-list{
+        position: absolute;
+        top: 90px;
+        right: -65%;
+        bottom: 0;
+        width: 60%;
+        height: 50%;
+        background: black;
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+        border-radius: 10px;
+    }
+    nav .nav-list li{
+        display: block;
+    }
+    nav .nav-list li a{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    nav .nav-list li.btn a{
+        position: absolute;
+        bottom: 0%;
+        right: 20%;
+        left: 20%;
+        padding: 7px 15px;
+        font-size: 14px;
+
+    }
+}
+.about{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+    text-align: center;
+    line-height: 1.5;
+    color: whitesmoke;
+    letter-spacing: 1px;
+
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2c6a75;
+}
+.testimonial{
+    padding: 10px 100px;
+    padding-bottom:0;
+}
+.wrapper h1{
+    color: whitesmoke;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-align: left;
+} 
+article h1:after{
+    height: 5px;
+    width: 225px;
+    display: block;
+    background-color: #ffff ;
+    margin: auto;
+}
+article img{
+    float: left;
+    height: 350px;
+    width: 350px;
+    border: 2px solid white;
+    margin-top: 30px;
+    margin-right: 130px;
+    
+    
+}
+article h6{
+    font-family: sans-serif;
+    font-size: 17px;
+    padding: 100px;
+    padding-bottom: 0;
+}
+article h5{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+    text-align: right;
+    margin-right: 45px;
+}
+article p{
+    text-align: right;
+}
+article{
+    font-size: 17px;
+}
+.skills{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #2c6a75;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.header{
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+}
+.header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2c6a75;
+}
+.header h1{
+    color: whitesmoke;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+    padding: 60px;
+    font-size: 15px;   
+}
+
+.skill-box{
+    padding:0.5rem;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before {
+    width: 35px;
+
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2cca71;
+    transition: .5s ;
+}
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #2cca71;
+    transition: .5s ;
+}
+
+.skill-title h3{
+    color:black;
+    margin-top: 0.5rem;
+
+}
+.contact{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    background-color: #2c6a75;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.contact h1{
+    color: whitesmoke;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.contact p{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+}
+form{
+    background: whitesmoke;
+    width: 100%;
+    height: 30%;
+    max-width: 100%;
+    align-items: right;
+    border-radius: 4px;
+    padding: 30px 30px;
+
+}
+form .title h2{
+    letter-spacing: 6px;
+    border-bottom: 1px solid whitesmoke;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+form.half{
+    display: flex;
+    justify-content: space-between;
+}
+form .half .item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 48%;
+}
+form label{
+    display: block;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    margin-bottom: 3px;
+}
+form .half .item input{
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: 0;
+    padding: 16px;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    font-size: 17px;
+}
+form .full{
+    margin-bottom:10px;
+}
+form .full textarea{
+background: transparent;
+border-radius: 4px;
+border: 1px solid black;
+outline: 0;
+padding: 12px 16px;
+width: 50%;
+height: 100px;
+font-size: 17px;
+
+}
+form .action{
+    margin-bottom: 32px;
+}
+form .action input{
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    height: 44px;
+    letter-spacing: 3px;
+    outline: 0;
+    padding: 0px 20px 0px 22px;
+}
+.contact img{
+    float: right;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin-right: 200px;
+    border-radius: 200px;
+    cursor: pointer;
+
+} 
+.portfolio{
+    padding: 50px ;
+}
+.portfolio-container{
+    padding-top: 50px;
+}
+.portfolio-text h1{
+    color: whitesmoke;
+   font-size: 60px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 81px;
+    padding: 203px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(105,105,105));
+    border-radius: 10px ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    
+}
+.layer h3, p{
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: white;
+}
+.layer a{
+    margin-top: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    line-height:80px;
+    background: #fff;
+    width: 60px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
